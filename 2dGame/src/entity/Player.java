@@ -1,10 +1,8 @@
 package entity;
 
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.nio.file.Paths;
 
 import javax.imageio.ImageIO;
 
@@ -29,7 +27,6 @@ public class Player extends Entity{
         direction ="up";
     }
     public void getPlayerImage(){
-        String path = Paths.get(".").toAbsolutePath().normalize().toString();
         try{
             up1 = ImageIO.read(getClass().getResourceAsStream("/res/player/boy_up_1.png"));
             up2 = ImageIO.read(getClass().getResourceAsStream("/res/player/boy_up_2.png"));
